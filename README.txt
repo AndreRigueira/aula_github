@@ -34,6 +34,7 @@ Sequência:
 > git remote add origin git@github.com:SEU_USUARIO/SEU_REPOSITORIO
 > git push -u origin main
 
+__________________________________________________________________
 
 Para clonar um repositório (pegar o projeto de outra pessoa):
 
@@ -43,6 +44,37 @@ Para clonar um repositório (pegar o projeto de outra pessoa):
 4. Executar o comando: 
     > git clone URL_DO_REPOSITORIO_QUE_SERA_CLONADO
 Obs. o comando 'clone', já cria a conexão do repositório remoto com a pasta local, e portanto não precisa fazer o 'git remote add origin'
+
+__________________________________________________________________
+
+## ATUALIZANDO OS arquivos
+
+Prepara o 'pacote':
+    > git add .
+
+Informa o objetivo do COMMIT:
+    > git commit -m "DESCRIÇÃO_DO_COMMIT"
+
+Se esse commit tiver mais de um autor, é possível informar que são da seguinte forma:
+    > git commit -m "Adicionar nova funcionalidade.
+    >
+    >
+    Co-authored-by: NOME <nome@email.com>
+    Co-authored-by: OUTRO-NOME <outro@email.com>"
+
+Para sincronizar os arquivos do repositório remoto, com os arquivos do repositório local (que foram atualizados/alterados/acrescentados):
+    > git push origin main
+
+__________________________________________________________________
+
+## PARA EU BAIXAR O MEU PROJETO QUE FOI ATUALIZADO (COMMIT) POR OUTRA PESSOA PARA MEU REPOSITÓRIO LOCAL:
+
+    > git pull origin main
+
+
+__________________________________________________________________
+
+## OUTROS COMANDOS ÚTEIS:
 
 Para verificar como está o status do commit (se já foi feito a sincronização, ou não com o repositório do Github)
     > git status
@@ -54,7 +86,19 @@ Para verificar quais são os repositorios remotos que tem adicionado ao projeto:
     > git remote
 
 
-BOAS PRÁTOCAS PARA AS MENSAGENS DE COMMIT
+__________________________________________________________________
+
+## ATENÇÃO ##
+
+1. Para uma pessoa conseguir fazer commit no repositório de outra pessoa, é preciso que o proprietário do repositório adicione o colaborador e 
+o colaborador aceite o convite (que chega no email):
+    -> Site do Github -> Repositório -> Settings -> Collaborators -> add people
+
+
+
+__________________________________________________________________
+
+## BOAS PRÁTICAS PARA AS MENSAGENS DE COMMIT
 
 As mensagens dos commits devem ser simples e objetivas. A seguir, listamos algumas orientações para isso:
 
