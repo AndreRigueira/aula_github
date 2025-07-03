@@ -92,14 +92,26 @@ __________________________________________________________________
 Essa ação é necessária quando fizemos um commit, mas ainda não sincronizamos com o repositório remoto, 
 e desejamos cancelar essa ação de commit por algum motivo.
 
+É ideal fazer isso só se não tiver mandado para o repositório remoto.
+
 > git log
 : q (para sair do modo de log)
 
 - identificar o commit, e copiar o ID dele.
 
-> git reset --hard ID_DO_COMMIT_QUE_SERÁ_APAGADO
+> git reset --hard ID_DO_COMMIT_QUE_SERÁ_APAGADO  (* para esse caso, tem que pegar o ID do commit anterior ????)
 
-Obs. Ver o arquivo para saber mais
+Obs. Ver a documentação oficial do git ( https://git-scm.com/docs/git-reset/pt_BR ) para ver outras opções de reset
+
+
+__________________________________________________________________
+
+## ALTERANDO UM COMMIT:
+
+Usado, por exemplo para mudar a mensagem de um commit
+
+> git commit --amend -m "
+
 
 __________________________________________________________________
 
