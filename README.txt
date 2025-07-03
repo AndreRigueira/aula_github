@@ -108,11 +108,11 @@ __________________________________________________________________
 
 ## ALTERANDO UM COMMIT:
 
-Usado, por exemplo para mudar a mensagem de um commit
+Usado, por exemplo para mudar a mensagem de um commit.
 
-> git commit --amend -m "
+> git commit --amend -m "NOVO_NOME_DO_COMMIT"
 
-
+Obs.: Também é interessante fazer isso antes de ter sincronizado com o repositório remoto. ?
 __________________________________________________________________
 
 ## OUTROS COMANDOS ÚTEIS:
