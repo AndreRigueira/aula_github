@@ -71,7 +71,19 @@ __________________________________________________________________
 
     > git pull origin main
 
+__________________________________________________________________
 
+## PARA REVERTER UM COMMIT:
+
+> git log
+
+: q   (para sair do modo de log)
+
+- Identificar o commit que precisa ser revertido, e copiar o ID dele.
+
+> git revert ID_DO_COMMIT_QUE_SERA_DESFEITO
+
+> git push origin main
 __________________________________________________________________
 
 ## OUTROS COMANDOS ÚTEIS:
