@@ -84,6 +84,23 @@ __________________________________________________________________
 > git revert ID_DO_COMMIT_QUE_SERA_DESFEITO
 
 > git push origin main
+
+__________________________________________________________________
+
+## APAGAR UM COMMIT:
+
+Essa ação é necessária quando fizemos um commit, mas ainda não sincronizamos com o repositório remoto, 
+e desejamos cancelar essa ação de commit por algum motivo.
+
+> git log
+: q (para sair do modo de log)
+
+- identificar o commit, e copiar o ID dele.
+
+> git reset --hard ID_DO_COMMIT_QUE_SERÁ_APAGADO
+
+Obs. Ver o arquivo para saber mais
+
 __________________________________________________________________
 
 ## OUTROS COMANDOS ÚTEIS:
