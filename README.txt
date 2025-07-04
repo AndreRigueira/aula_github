@@ -103,7 +103,6 @@ e desejamos cancelar essa ação de commit por algum motivo.
 
 Obs. Ver a documentação oficial do git ( https://git-scm.com/docs/git-reset/pt_BR ) para ver outras opções de reset
 
-
 __________________________________________________________________
 
 ## ALTERANDO UM COMMIT:
@@ -113,6 +112,14 @@ Usado, por exemplo para mudar a mensagem de um commit.
 > git commit --amend -m "NOVO_NOME_DO_COMMIT"
 
 Obs.: Também é interessante fazer isso antes de ter sincronizado com o repositório remoto. ?
+
+
+__________________________________________________________________
+
+## PARA FAZER COM QUE O GIT NÃO SINCRONIZE DETERMINADOS ARQUIVOS 
+
+1. criar um arquivo com o nome '.gitignore'
+2. Nesse arquivo, colocar o nome dos arquivos / pastas / padrões (*.txt, por exemplo) que serão ignorados no processo de commit e sincronização
 __________________________________________________________________
 
 ## OUTROS COMANDOS ÚTEIS:
