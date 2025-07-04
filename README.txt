@@ -120,6 +120,14 @@ __________________________________________________________________
 
 1. criar um arquivo com o nome '.gitignore'
 2. Nesse arquivo, colocar o nome dos arquivos / pastas / padrões (*.txt, por exemplo) que serão ignorados no processo de commit e sincronização
+
+* Usar o apoio de sites como o gitignore.io (https://www.toptal.com/developers/gitignore)
+    1. informa a tecnologia (Python, Java, PHP, ...)
+    2. Ele gera um arquivo .gitignore com tudo que pode 'haver' no projeto e pode ser ignorado, 
+    pois tratam-se exclusivamente de arquivos locais que não influenciam no projeto
+    
+
+
 __________________________________________________________________
 
 ## OUTROS COMANDOS ÚTEIS:
